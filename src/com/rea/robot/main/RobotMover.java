@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.rea.robot.main;
 
 import java.io.BufferedReader;
@@ -13,7 +11,7 @@ import com.rea.robot.helper.Interpreter;
 
 
 /**
- * @author Hasantha Liyanage
+ * @author Hasantha Liyanage (LNGHAQ)
  */
 public class RobotMover {
 
