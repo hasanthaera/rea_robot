@@ -7,7 +7,7 @@ package com.rea.robot.helper;
  */
 public class Command {
 
-	public enum CommandType {MOVE, REPORT, LEFT, RIGHT}
+	public enum CommandType {MOVE, REPORT, LEFT, RIGHT, PLACE}
 	//IGNORED will be used to stop robot falling from the table
 	public enum CommandStatus {DONE, IGNORED}
 	public enum TurnDirection {LEFT, RIGHT}

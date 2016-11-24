@@ -20,12 +20,14 @@ public class Robot {
 	// Default values
 	Table table = null;
 	// checking whether the robot is placed on the table surface
-	private boolean isOnTable = false;
+	public boolean isOnTable = false;
 	// Initially Robot will b facing NORTH
-	private FacingDirection directionFacing = FacingDirection.NORTH;
+	public FacingDirection directionFacing = FacingDirection.NORTH;
 	//dimensions of the table-top 
-	private int xPosition = 0;
-	private int yPosition = 0;
+	public int xPosition = 0;
+	public int yPosition = 0;
+	
+	public String report = "";
 
 	public Robot(Table table) {
 		if (table == null) {
@@ -41,7 +43,7 @@ public class Robot {
 	 * @param yPosition
 	 * @param directionFacing
 	 */
-	public void place(int xPosition, int yPosition, FacingDirection directionFacing) {
+	public CommandStatus place(int xPosition, int yPosition, FacingDirection directionFacing) {
 
 		if (xPosition < 0 || yPosition < 0 || !table.isValidPosition(xPosition, yPosition)) {
 			throw new IllegalArgumentException("Invalid postion");
@@ -51,6 +53,9 @@ public class Robot {
 		this.xPosition = xPosition;
 		this.yPosition = yPosition;
 		this.directionFacing = directionFacing;
+		this.report = "";
+		
+		return CommandStatus.DONE;
 	}
 
 	/**
@@ -175,7 +180,8 @@ public class Robot {
 	 */
 	private CommandStatus report() {
 		if (isOnTable) {
-			System.out.println(xPosition + "," + yPosition + "," + directionFacing.name());
+			report = xPosition + "," + yPosition + "," + directionFacing.name();
+			System.out.println(report);
 			return CommandStatus.DONE;
 		} else {
 			return CommandStatus.IGNORED;
