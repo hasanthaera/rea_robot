@@ -1,8 +1,7 @@
 package com.rea.robot.domain;
 
-
 /**
- * @author Hasantha Liyanage
+ * @author Hasantha Liyanage (LNGHAQ)
  * This is the table component which the robot is moving,
  * a table could be created by passing the X and Y axis values via the constructor method
  */
