@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.rea.robot.helper;
 
 import com.rea.robot.domain.Robot;
@@ -8,7 +5,7 @@ import com.rea.robot.domain.Robot.FacingDirection;
 import com.rea.robot.helper.Command.CommandType;
 
 /**
- * @author LNGHAQ
+ * @author Hasantha Liyanage (LNGHAQ)
  *
  */
 public class Interpreter {
