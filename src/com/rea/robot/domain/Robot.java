@@ -1,13 +1,11 @@
-/**
- * 
- */
+
 package com.rea.robot.domain;
 
 import com.rea.robot.helper.Command;
 import com.rea.robot.helper.Command.CommandStatus;
 
 /**
- * @author Hasantha Liyanage
+ * @author Hasantha Liyanage (LNGHAQ)
  * The Robot class contains all the actions related to the robot on the table,
  * this implements Place, Move, Report and other Actions Left and Right behaviors
  */
